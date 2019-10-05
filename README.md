@@ -1,4 +1,6 @@
-## Apache2 with php7 on Ubuntu 16.04 LTS
+## Apache2 with php7 on Ubuntu 16.04 LTS for Development
+
+This docker image is a fork from nimmis/apache-php7.
 
 This is a docker images with  Ubuntu 16.04 LTS with apache2 and php7/composer
 
