@@ -11,5 +11,6 @@ php-fpm php-cli php-mysqlnd php-pgsql php-sqlite3 php-redis \
 php-apcu php-intl php-imagick php-mcrypt php-json php-gd php-curl && \
 phpenmod mcrypt && \
 rm -rf /var/lib/apt/lists/* && \
-cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
+cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && \
+sed -i "s/display_errors\ =\ Off/display_errors\ =\ On/" /etc/php/7.0/apache2/php.ini
 
